@@ -39,7 +39,7 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
                                 : <><DateComponent date={started}/></>
                         }
                     </section>
-                    <section>
+                    <nav>
                         <figure>
                             <figcaption>
                                 <Mu/> Web
@@ -67,7 +67,7 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
                                 </ul>
                             </nav>
                         </figure>
-                    </section>
+                    </nav>
                 </footer>
             </article>
         )
