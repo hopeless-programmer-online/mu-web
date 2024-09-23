@@ -1,0 +1,23 @@
+article.layout {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: whitesmoke;
+
+    > header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        > a {
+            font-size: 96pt;
+            text-decoration: none;
+        }
+    }
+    > main {
+        flex-grow: 1;
+    }
+}

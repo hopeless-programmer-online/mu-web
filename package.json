@@ -1,0 +1,36 @@
+{
+  "name": "mu-web",
+  "version": "0.1.0",
+  "description": "μ online compiler.",
+  "scripts": {
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hopeless-programmer-online/mu-web.git"
+  },
+  "author": {
+    "name": "Hopeless Programmer",
+    "email": "me@hopeless-programmer.online",
+    "url": "https://hopeless-programmer.online"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hopeless-programmer-online/mu-web/issues"
+  },
+  "homepage": "https://github.com/hopeless-programmer-online/mu-web#readme",
+  "dependencies": {
+    "next": "^12.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.79.3",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "ts-node": "^10.9.1"
+  }
+}
