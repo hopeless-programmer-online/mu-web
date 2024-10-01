@@ -15,7 +15,13 @@ export default class IndexPage extends React.Component<Props, State> {
         return (
             <Page>
                 <Layout date={date}>
-                    <Mu/> programming language!
+                    <p>
+                        <Mu/> programming language!
+                    </p>
+                    <blockquote>
+                        — How much syntax sugar do You want?<br/>
+                        — Yes.
+                    </blockquote>
                 </Layout>
             </Page>
         )

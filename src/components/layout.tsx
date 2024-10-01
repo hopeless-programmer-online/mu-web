@@ -23,6 +23,9 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
                             <li>
                                 <a href='/'>Home</a>
                             </li>
+                            <li>
+                                <a href='/'>About</a>
+                            </li>
                         </ul>
                     </nav>
                 </header>
