@@ -35,7 +35,7 @@ article.layout {
                 padding: 0;
                 border-radius: 8px;
                 background-color: lightgray;
-                box-shadow: 0 4px 8px rgba(black, 0.2);
+                box-shadow: 0 2px 4px rgba(black, 0.2);
                 display: flex;
                 justify-content: stretch;
                 align-items: stretch;
@@ -95,5 +95,15 @@ article.layout {
             justify-content: center;
             align-items: flex-start;
         }
+    }
+}
+article.light {
+    // todo
+}
+article.dark {
+    background-color: mix(orangered, rgba(30, 30, 30), 1);
+
+    > header {
+        background-color: rgb(30, 30, 30);
     }
 }

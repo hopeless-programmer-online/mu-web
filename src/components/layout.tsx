@@ -2,18 +2,26 @@ import React, { PropsWithChildren } from 'react'
 import DateComponent from './date'
 import Mu from './mu'
 import styles from './layout.module.scss'
+import ThemeSwitchComponent, { Mode } from './theme_switch'
 
 export type Props = {
     date : Date
 }
-export type State = unknown
+export type State = {
+    mode : Mode
+}
 
 export default class LayoutComponent extends React.Component<PropsWithChildren<Props>, State> {
+    public state : State = {
+        mode : `light`,
+    }
+
     public render() {
         const { date } = this.props
+        const { mode } = this.state
 
         return (
-            <article className={styles.layout}>
+            <article className={[ styles.layout, mode === `light` ? styles.light : styles.dark ].join(` `)}>
                 <header>
                     <a href='/'>
                         <Mu/>
@@ -28,6 +36,7 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
                             </li>
                         </ul>
                     </nav>
+                    <ThemeSwitchComponent onChange={mode => this.setState({ mode })}/>
                 </header>
                 <main>
                     {this.props.children}
