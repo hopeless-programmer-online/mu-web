@@ -1,0 +1,20 @@
+$color-background: rgb(30, 30, 30);
+$color-index: rgb(133, 133, 133);
+$color-space: rgb(61, 62, 61);
+$color-regular: rgb(212, 212, 212);
+$color-selection: rgb(38, 79, 120);
+$color-comments: rgb(106, 153, 85);
+$color-variable: rgb(156, 220, 254);
+$color-keyword: rgb(86, 156, 214);
+$color-macro: rgb(197, 134, 192);
+$color-number: rgb(181, 206, 168);
+$color-string: rgb(206, 145, 120);
+$color-class: rgb(78, 201, 176);
+$color-regex: rgb(209, 105, 105);
+$color-function: rgb(220, 220, 170);
+
+@mixin code() {
+    .comment {
+        color: $color-comments;
+    }
+}

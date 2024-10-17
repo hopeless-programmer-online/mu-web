@@ -2,6 +2,7 @@ import React from 'react'
 import Page from '../components/page'
 import Layout from '../components/layout'
 import Mu from '../components/mu'
+import Editor from '../components/editor'
 
 export type Props = {
     date : string
@@ -22,6 +23,7 @@ export default class IndexPage extends React.Component<Props, State> {
                         — How much syntax sugar do You want?<br/>
                         — Yes.
                     </blockquote>
+                    <Editor/>
                 </Layout>
             </Page>
         )
