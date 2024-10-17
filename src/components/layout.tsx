@@ -34,6 +34,9 @@ export default class LayoutComponent extends React.Component<PropsWithChildren<P
                             <li>
                                 <a href='/'>About</a>
                             </li>
+                            <li>
+                                <a href='/roadmap'>Road Map</a>
+                            </li>
                         </ul>
                     </nav>
                     <ThemeSwitchComponent onChange={mode => this.setState({ mode })}/>

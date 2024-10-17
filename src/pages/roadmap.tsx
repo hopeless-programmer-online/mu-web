@@ -16,7 +16,7 @@ export default class RoadMapPage extends React.Component<Props, State> {
                 <Layout date={date}>
                     <figure>
                         <figcaption>
-                            <h2>Roadmap</h2>
+                            <h2>Road Map</h2>
                         </figcaption>
                         <ul>
                             {[
@@ -31,6 +31,8 @@ export default class RoadMapPage extends React.Component<Props, State> {
                                 [ false, `SQL` ] as const,
                                 [ false, `XML` ] as const,
                                 [ false, `JSON` ] as const,
+                                [ false, `Exceptions` ] as const,
+                                [ false, `Chicken-egg declaration?` ] as const,
                             ].map(([flag, text], i) =>
                                 <li key={i}>
                                     <label>
